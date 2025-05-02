@@ -3536,7 +3536,7 @@ export default {
       }
     },
     "name": "4KHD",
-    "url": "www.4khd.com",
+    "url": "www.4khd.net",
     "description": "4KHD - HD Beautiful Girls",
     "lang": "en"
   },
