@@ -3693,6 +3693,9 @@
   "/hubu/zhxy/:category{.+}?": [
     "nczitzk"
   ],
+  "/huggingface/blog-community/:sort?": [
+    "yuguorui"
+  ],
   "/huggingface/blog-zh": [
     "zcf0508"
   ],
@@ -8473,6 +8476,9 @@
   ],
   "/zagg/new-arrivals/:query?": [
     "EthanWng97"
+  ],
+  "/zaimanhua/update": [
+    "kjasn"
   ],
   "/zaker/channel/:id?": [
     "LogicJake",

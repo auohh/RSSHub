@@ -24542,6 +24542,14 @@ export default {
         "maintainers": [
           "admxj"
         ],
+        "radar": [
+          {
+            "source": [
+              "www.crac.org.cn/*"
+            ],
+            "target": "/exam"
+          }
+        ],
         "location": "exam.ts",
         "module": () => import('@/routes/crac/exam.ts')
       },
@@ -24567,12 +24575,22 @@ export default {
           "Misaka13514"
         ],
         "description": "| 新闻动态 | 通知公告 | 政策法规 | 常见问题 | 资料下载 | English | 业余中继台 | 科普专栏 |\n| -------- | -------- | -------- | -------- | -------- | ------- | ---------- | -------- |\n| 1        | 2        | 3        | 5        | 6        | 7       | 8          | 9        |",
+        "radar": [
+          {
+            "source": [
+              "www.crac.org.cn/News/*"
+            ]
+          }
+        ],
         "location": "index.ts",
         "module": () => import('@/routes/crac/index.ts')
       }
     },
     "name": "中国无线电协会业余无线电分会",
     "url": "www.crac.org.cn",
+    "categories": [
+      "government"
+    ],
     "lang": "zh-CN"
   },
   "creative-comic": {
@@ -48497,6 +48515,52 @@ export default {
   },
   "huggingface": {
     "routes": {
+      "/blog-community/:sort?": {
+        "path": "/blog-community/:sort?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/huggingface/blog-community",
+        "parameters": {
+          "sort": {
+            "description": "Sort by trending or recent",
+            "default": "trending",
+            "options": [
+              {
+                "value": "trending",
+                "label": "Trending"
+              },
+              {
+                "value": "recent",
+                "label": "Recent"
+              }
+            ]
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "huggingface.co/blog/community",
+              "huggingface.co/"
+            ]
+          }
+        ],
+        "name": "Community Articles",
+        "maintainers": [
+          "yuguorui"
+        ],
+        "url": "huggingface.co/blog/community",
+        "location": "blog-community.ts",
+        "module": () => import('@/routes/huggingface/blog-community.ts')
+      },
       "/blog-zh": {
         "path": "/blog-zh",
         "categories": [
@@ -110359,6 +110423,42 @@ export default {
     "name": "Zagg",
     "url": "zagg.com",
     "lang": "en"
+  },
+  "zaimanhua": {
+    "routes": {
+      "/update": {
+        "path": "/update",
+        "categories": [
+          "anime"
+        ],
+        "example": "/zaimanhua/update",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "manhua.zaimanhua.com/update"
+            ],
+            "target": "/update"
+          }
+        ],
+        "name": "最近更新",
+        "maintainers": [
+          "kjasn"
+        ],
+        "location": "update.ts",
+        "module": () => import('@/routes/zaimanhua/update.ts')
+      }
+    },
+    "name": "再漫画",
+    "url": "manhua.zaimanhua.com",
+    "lang": "zh-CN"
   },
   "zaker": {
     "routes": {
