@@ -17985,6 +17985,23 @@
         "target": "/gcores/gcores/topics/:id/recommend"
       },
       {
+        "title": "用户播客",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/users/:id/content",
+          "/users/:id"
+        ],
+        "target": "/gcores/users/:id/radios"
+      },
+      {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/users/:id/talks"
+        ],
+        "target": "/gcores/users/:id/talks"
+      },
+      {
         "title": "视频",
         "docs": "https://docs.rsshub.app/routes/game",
         "source": [
@@ -33346,8 +33363,7 @@
         "title": "教务通知",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
-          "/",
-          "/jwtz/index.htm"
+          "/"
         ],
         "target": "/ncu/jwc"
       }
