@@ -223,6 +223,7 @@ export type RoutePath =
   | `/arcteryx/outlet/:country/:gender`
   | `/arcteryx/regear/new-arrivals`
   | `/artstation/:handle`
+  | `/aschmelyun/blog`
   | `/asiafruitchina/categories/:category?`
   | `/asiafruitchina/news`
   | `/asianfanfics/tag/:tag/:type`
@@ -1064,6 +1065,7 @@ export type RoutePath =
   | `/gamersky/ent/:category?`
   | `/gamersky/news/:type?`
   | `/gamersky/review/:type?`
+  | `/gamersky/user/:userId/:detail?`
   | `/gamme/:domain/:category?`
   | `/gamme/:domain/tag/:tag`
   | `/ganjingworld/channel/articles/:id`

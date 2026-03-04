@@ -677,6 +677,9 @@
   "/artstation/:handle": [
     "TonyRL"
   ],
+  "/aschmelyun/blog": [
+    "raxod502"
+  ],
   "/asiafruitchina/categories/:category?": [
     "nczitzk"
   ],
@@ -3287,6 +3290,9 @@
   ],
   "/gamersky/review/:type?": [
     "yy4382"
+  ],
+  "/gamersky/user/:userId/:detail?": [
+    "hualiong"
   ],
   "/gamme/:domain/:category?": [],
   "/gamme/:domain/tag/:tag": [],
